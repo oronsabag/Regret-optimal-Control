@@ -14,7 +14,7 @@ G2 = sys.B* inv(sqrtm(sys.Q));
 % 
 % Rc = sys.Q + G2'*P*G2;
 
-[P,L,G] = dare(F,G2, size(sys.A,1),sys.Q);
+[P,L,G] = dare(F,G2, eye(size(sys.A,1)),sys.Q);
 
 Rc = sys.Q + G2'*P*G2;
 Kc = inv(Rc)*G2'*P*F;

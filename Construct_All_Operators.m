@@ -16,6 +16,8 @@ for i=1:size(Samp.G,3)
     
     Upper_H2 = Samp.F(:,:,i)*Samp.KH2(:,:,i) + Samp.G(:,:,i);
     
+
+    
     Operator.regret(:,:,i) = [Upper_regret;K_regret];
     
     Operator.NC(:,:,i) = [Upper_NC;K_NC];

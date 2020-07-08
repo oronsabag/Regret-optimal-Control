@@ -10,7 +10,7 @@ T_func.S          = TF_S(sys);
 
 [T_func.NC_caus, T_func.NC_anticaus] = TF_NonCausal(sys,T_func.S,T_func.T);
 
-T_func.Kinf       = find_Kinf(sys);
+T_func.Kinf        = TF_inf(sys);
 T_func.KH2         = TF_H2(sys);
 
 
